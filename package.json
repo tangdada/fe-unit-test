@@ -1,0 +1,34 @@
+{
+  "name": "unit-test-pro",
+  "version": "1.0.0",
+  "description": "前端单元测试",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "comment_cover": "在window下找不到 _mocha 这个东西，所以要用 node_modules/mocha/bin/_mocha 来替代 _mocha",
+    "cover": "./node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha -- --timeout 3500",
+    "page": "./node_modules/.bin/istanbul report --root coverage lcov",
+    "karma": "karma start --single-run"
+  },
+  "author": "tangxiaoqing",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "istanbul": "^0.4.5",
+    "karma": "^4.2.0",
+    "karma-chrome-launcher": "^3.0.0",
+    "karma-coverage": "^1.1.2",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-should": "^1.0.0",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^4.0.2",
+    "mocha": "^6.1.4",
+    "phantomjs-prebuilt": "^2.1.16",
+    "should": "^13.2.3",
+    "webpack": "^4.35.3"
+  }
+}

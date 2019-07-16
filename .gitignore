@@ -1,0 +1,21 @@
+node_modules
+.idea
+\.tags*
+routes.js
+proxy
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+.DS_Store
+
+dist
+temp
